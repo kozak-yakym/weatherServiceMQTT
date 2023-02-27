@@ -1,0 +1,3 @@
+@reboot cd /root/weatherService && ./run_test_model.sh > /root/weatherService/run_test_model.out 2>&1
+
+

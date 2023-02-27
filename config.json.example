@@ -1,0 +1,11 @@
+{
+  "creds": [
+    {
+      "clientId": "nodejs-weather-service1",
+      "clientURL": "m.cloudmqtt.com",
+      "clientPort": "18348",
+      "clientUname": "name",
+      "clientPass": "pass"
+    }
+  ]
+}

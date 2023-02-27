@@ -1,0 +1,30 @@
+{
+  "name": "weather-service",
+  "version": "0.0.1",
+  "description": "weather-service",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:simulator.git"
+  },
+  "keywords": [
+    "MQTT",
+    "IoT",
+    "weather",
+    "service"
+  ],
+  "author": "Andrii Yakymenko",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0",
+    "console-stamp": "^0.2.9",
+    "mqtt": "1.6.0",
+    "openweather-apis": "^4.3.1",
+    "stdio": "^0.2.7"
+  },
+  "devDependencies": {}
+}
