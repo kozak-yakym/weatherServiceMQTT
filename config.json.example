@@ -5,7 +5,8 @@
       "clientURL": "m.cloudmqtt.com",
       "clientPort": "18348",
       "clientUname": "name",
-      "clientPass": "pass"
+      "clientPass": "pass",
+      "weatherAPIkey": "weatherAPIkey"
     }
   ]
 }

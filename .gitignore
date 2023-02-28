@@ -1,4 +1,4 @@
 /node_modules/*
 config.json
 package-lock.json
-run_test_model.out
+run_service.out

@@ -7,15 +7,13 @@
 var dateFormat = require('dateformat');
 var weather = require('openweather-apis');
 // TODO: Move this to config file with examples.
-var ownKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 function servicesM(service_creds) {
-  var template;
+  // var template;
 
   // Device config parse and MQTT connectivity
   var mqtt = require('mqtt'), url = require('url');
 
-  // clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8)
   // protocol: "mqtts",
   var options = {
     clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
@@ -88,7 +86,7 @@ function servicesM(service_creds) {
   // 'metric'  'internal'  'imperial'
   weather.setUnits('metric');
   // check http://openweathermap.org/appid#get for get the APPID
-  weather.setAPPID(ownKey);
+  weather.setAPPID(service_creds.weatherAPIkey);
 
 /*    
   // Payload composing 
@@ -211,5 +209,4 @@ function servicesM(service_creds) {
 
 }
 
-// exports.getDeviceId = getDeviceId;
 exports.servicesM = servicesM;
