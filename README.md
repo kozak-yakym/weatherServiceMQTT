@@ -1,7 +1,8 @@
 # Weather Service project
-It's a service running on Node JS which collect the weather data, date and time and sends to MQTT broker.     
-    
-Key components:    
+Once I wanted to create a budget smart home system based on HomeAssistant. I took sensors based on ESP8266 and ESP32, generated firmware for them via ESPHome and received data on the phone.          
+However, I had very old tablets with Android OS 4 or thereabouts lying around and I decided to make dashboards for my smart home, which already had about 5 temperature and humidity sensors, a controlled hood in the bathroom and 4 heating system actuators. It turned out that neither the HomeAssistant application nor even its web interface opens on these tablets. So, I decided to use the MQTT Dashboard application, as the sensors and actuators could be programmed to simultaneously send data to the MQTT broker. But at the same time, I wanted to see the date, time and weather through the MQTT Dashboard application because it is convenient when you are about get out of the house. So I created the following Node JS service that collects weather, date, and time and sends it to an MQTT broker. This service usually runs on the same server as the docker with HomeAssistant.    
+     
+Key NodeJS components:    
 - openweather-apis    
 - Date    
 - mqtt    
@@ -71,7 +72,7 @@ step is set the params for the request (request the api-key at http://openweathe
 	// or set city by ID (recommended by OpenWeatherMap)
 	weather.setCityId(4367872);
 
-    // or set zip code
+        // or set zip code
 	weather.setZipCode(33615);
 
 	// 'metric'  'internal'  'imperial'
